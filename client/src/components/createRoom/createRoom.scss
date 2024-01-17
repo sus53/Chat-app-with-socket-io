@@ -1,0 +1,64 @@
+.createRoom {
+    width: 400px;
+    height: 400px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+
+    label {
+        display: block;
+        font-size: 20px;
+    }
+
+    input {
+        outline: none;
+        border: 1px solid black;
+        width: calc(100% - 10px);
+        height: 45px;
+        font-size: 22px;
+        background-color: inherit;
+        z-index: 0;
+        padding-left: 10px;
+    }
+
+    input:active {
+        z-index: 0;
+    }
+
+    .close-create-room-btn {
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    h1 {
+        margin: 50px 0;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    >div>button {
+        margin: 50px 0 0 50%;
+        transform: translate(-50%);
+        width: 50%;
+        border-radius: 50px;
+        height: 50px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    button:hover {
+        background-color: rgb(223, 222, 222);
+    }
+
+    button:active {
+        background-color: rgb(197, 196, 196);
+    }
+}

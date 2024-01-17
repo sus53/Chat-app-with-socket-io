@@ -1,0 +1,17 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-image: url("./assets//img/background.jpg");
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}

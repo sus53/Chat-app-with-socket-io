@@ -1,0 +1,211 @@
+.dashboard {
+    width: 600px;
+    height: 700px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+    .d-none {
+        display: none;
+    }
+
+    .head {
+        border-radius: 10px 10px 0 0;
+        background: url('../../assets/img/background2.jpg');
+        background-size: cover;
+        color: white;
+        width: 100%;
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+
+        input {
+            height: 45px;
+            width: 85%;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+            border-radius: 10px;
+            font-size: 17px;
+            transform: translate(0, 13px);
+        }
+
+        input::placeholder {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .menu-toggler {
+            width: 20px;
+            height: 40px;
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            cursor: pointer;
+            background-color: inherit;
+            padding: 0;
+            border: none;
+            transition: all 0.5s ease-in-out;
+
+            >div {
+                height: 2px;
+                width: 100%;
+                margin-bottom: 4px;
+                background-color: white;
+            }
+        }
+
+        .menu-toggle {
+            position: absolute;
+            right: 1rem;
+            top: 2.8rem;
+            width: 150px;
+            height: 125px;
+            background-color: aliceblue;
+            transition: all 0.7s ease-in-out;
+            border-radius: 5px;
+            color: black;
+
+            &>div:nth-child(1) {
+                border-radius: 5px 5px 0 0;
+                background-color: rgb(218, 215, 215);
+                color: rgb(34, 34, 33);
+            }
+
+            >div {
+                height: 30px;
+                padding: 5px 5px;
+                border-bottom: 1px solid lightgray;
+            }
+
+            .icon {
+                display: inline-block;
+                width: 25px;
+                transform: translate(0, 5px);
+            }
+
+            >div>.link>button {
+                outline: none;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                height: 100%;
+                width: 100%;
+                background-color: inherit;
+                text-align: left;
+                font-family: 'Quicksand', sans-serif;
+                padding: 0;
+
+            }
+
+            >div>button {
+                outline: none;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                height: 100%;
+                width: 100%;
+                background-color: inherit;
+                text-align: left;
+                font-family: 'Quicksand', sans-serif;
+                padding: 0;
+
+            }
+        }
+
+
+
+        .o-none {
+            opacity: 0;
+            transform: translate(30px);
+        }
+
+        .r-90 {
+            transform: rotate(90deg);
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 510px;
+        border-radius: 0 0 10px 10px;
+        padding: 10px 0;
+        background: url('../../assets/img/background3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-y: scroll;
+        color: wheat;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        >div>.link {
+            text-decoration: none;
+
+            >button {
+                display: flex;
+                width: calc(100% - 10px);
+                height: 60px;
+                padding: 5px 0 5px 10px;
+                cursor: pointer;
+                color: white;
+                transition: all 0.5s;
+
+                font-family: 'Quicksand', sans-serif;
+                background-color: rgb(41, 48, 48, 0.2);
+
+                .room-head {
+                    width: 47px;
+                    height: 40px;
+                    padding-top: 5px;
+                    border-radius: 100%;
+                    background-color: rgb(255, 255, 255);
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 900;
+                    color: rgb(0, 0, 0);
+                    transition: all 0.5s;
+                }
+
+                .room-body {
+                    text-align: start;
+                    margin: auto 1rem;
+                    font-size: 22px;
+                    font-weight: 500;
+                    width: 70%;
+                }
+
+                &:hover {
+                    background-color: rgb(211, 210, 210, 0.8);
+                    color: black;
+
+                    .room-head {
+                        background-color: rgb(0, 0, 0);
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .p-fixed-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
