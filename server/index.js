@@ -25,7 +25,7 @@ app.use('/user', UserRouter);
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://chat-app-with-socket-io-ten.vercel.app",
         methods: ["POST", "GET"]
     }
 })

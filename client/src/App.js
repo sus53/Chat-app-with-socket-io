@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CreateRoom from "./components/createRoom/CreateRoom";
 
 
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://chat-app-eight-sable.vercel.app");
 
 function App() {
 
