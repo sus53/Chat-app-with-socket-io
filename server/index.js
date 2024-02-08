@@ -13,8 +13,8 @@ const app = express();
 const server = http.createServer(app);
 
 mongoose.connect(process.env.mongoDB).then(() =>
-    server.listen(process.env.PORT, () => {
-        console.log("Server is listening in PORT " + process.env.PORT);
+    server.listen("https://chat-app-with-socket-io-dun.vercel.app", () => {
+        console.log("Server is listening in PORT " + "https://chat-app-with-socket-io-dun.vercel.app");
     })).catch(err => console.log(err));
 
 app.use(cors());
