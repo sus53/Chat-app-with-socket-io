@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const URL = "https://chat-app-with-socket-io-dun.vercel.app/room"
+const URL = "https://chat-app-eight-sable.vercel.app/room"
 
 export const GetRoom = () => axios.get(URL);
 
